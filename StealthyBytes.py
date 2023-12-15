@@ -389,18 +389,18 @@ def main():
 
     Usage:
         To embed a script into an image:
-        python script.py --mode embed --script script.py --output embedded_image.png [--image input_image.png]
+        python StealthyBytes.py --mode embed --script script.ps1 --output embedded_image.png [--image input_image.png]
 
         To extract an embedded script from an image:
-        python script.py --mode extract --image embedded_image.png --output extracted_script.py
+        python StealthyBytes.py --mode extract --image embedded_image.png --output extracted_script.ps1
 
         To extract an embedded script from a web image:
-        python script.py --mode extract --url image_url --output extracted_script.py
+        python script.py --mode extract --url image_url --output extracted_script.ps1
 
         To generate a one-liner for script extraction:
-        python script.py --mode one_liner --image embedded_image.png
+        python StealthyBytes.py --mode one_liner --image embedded_image.png --powershell
         or
-        python script.py --mode one_liner --url image_url
+        python StealthyBytes.py --mode one_liner --url image_url --powershell
     """
 
     parser = argparse.ArgumentParser(description="Embed or Extract a script in/from an image file.")
